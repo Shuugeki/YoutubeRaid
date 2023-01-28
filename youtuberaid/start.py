@@ -28,7 +28,7 @@ class dwonTiktok:
                         try:
                             url = "https://www.tikwm.com/api/user/posts"
 
-                            querystring = {"unique_id":"", "count":"10","cursor":"0"}
+                            querystring = {"unique_id":"", "count":"3","cursor":"0"}
                             querystring["unique_id"] = input(f"{Fore.YELLOW}Enter User:{Fore.WHITE} ")
 
                             s = requests.Session()
@@ -106,7 +106,7 @@ class dwonTiktok:
                     ]
                     api_key = random.choice(key)
 
-                    querystring = {"unique_id":"", "count":"10","cursor":"0"}
+                    querystring = {"unique_id":"", "count":"3","cursor":"0"}
                     querystring["unique_id"] = input(f"{Fore.YELLOW}Enter User:{Fore.WHITE} ")
 
                     headers = {
